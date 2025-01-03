@@ -12,7 +12,7 @@
   <script>window.REIMU_CONFIG = {};window.REIMU_CONFIG.icon_font = '4552607_tq6stt6tcg';window.REIMU_CONFIG.clipboard_tips = {"success":"复制成功(*^▽^*)","fail":"复制失败 (ﾟ⊿ﾟ)ﾂ","copyright":{"enable":false,"count":50,"content":"本文版权：本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！"}};window.REIMU_CONFIG.code_block = {"expand":true};</script>
   
   <title>
-    新年 |
+    新年测试 |
     
     天子の家
   </title>
@@ -27,15 +27,15 @@
 
   
   
-    <meta name="description" content="function createDengBox(position, text) {    const dengBox &#x3D; document.createElement(‘div’);    dengBox.className &#x3D; deng-box$&#123;position&#125;;    dengBox.style.position &#x3D; ‘fixed’;">
+    <meta name="description" content="&#x2F;&#x2F; 你的 createDengBox 函数和调用代码 function createDengBox(position, text) {     const dengBox &#x3D; document.createElement(&#39;div&#39;);     dengBox.className &#x3D; &#96;deng-box${position}&#96;;     dengBox.style.position &#x3D; &#39;fi">
 <meta property="og:type" content="article">
-<meta property="og:title" content="新年">
+<meta property="og:title" content="新年测试">
 <meta property="og:url" content="http://example.com/2025/01/03/%E6%96%B0%E5%B9%B4%E6%B5%8B%E8%AF%95/index.html">
 <meta property="og:site_name" content="天子の家">
-<meta property="og:description" content="function createDengBox(position, text) {    const dengBox &#x3D; document.createElement(‘div’);    dengBox.className &#x3D; deng-box$&#123;position&#125;;    dengBox.style.position &#x3D; ‘fixed’;">
+<meta property="og:description" content="&#x2F;&#x2F; 你的 createDengBox 函数和调用代码 function createDengBox(position, text) {     const dengBox &#x3D; document.createElement(&#39;div&#39;);     dengBox.className &#x3D; &#96;deng-box${position}&#96;;     dengBox.style.position &#x3D; &#39;fi">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-01-03T12:48:55.592Z">
-<meta property="article:modified_time" content="2025-01-03T12:48:55.592Z">
+<meta property="article:published_time" content="2025-01-03T12:52:50.148Z">
+<meta property="article:modified_time" content="2025-01-03T12:52:50.148Z">
 <meta property="article:author" content="天子">
 <meta name="twitter:card" content="summary">
   
@@ -162,7 +162,7 @@
         
         
           <a href="/" id="logo">
-            <h1 data-aos="slide-up">新年</h1>
+            <h1 data-aos="slide-up">新年测试</h1>
           </a>
         
       
@@ -183,7 +183,7 @@
     <div class="article-meta">
       <div class="article-date">
   <a href="/2025/01/03/%E6%96%B0%E5%B9%B4%E6%B5%8B%E8%AF%95/" class="article-date-link" data-aos="zoom-in">
-    <time datetime="2025-01-03T12:48:55.592Z" itemprop="datePublished">2025-01-03</time>
+    <time datetime="2025-01-03T12:52:50.148Z" itemprop="datePublished">2025-01-03</time>
     <time style="display: none;" id="post-update-time">2025-01-03</time>
   </a>
 </div>
@@ -197,156 +197,171 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
       
-        <p>function createDengBox(position, text) {<br>    const dengBox &#x3D; document.createElement(‘div’);<br>    dengBox.className &#x3D; <code>deng-box$&#123;position&#125;</code>;<br>    dengBox.style.position &#x3D; ‘fixed’;<br>    dengBox.style.zIndex &#x3D; ‘9999’;<br>    dengBox.style.pointerEvents &#x3D; ‘none’;</p>
-<pre><code>// 设置位置
-if (position === 1) &#123;
-    dengBox.style.top = &#39;-30px&#39;;
-    dengBox.style.left = &#39;-1px&#39;;
-&#125; else if (position === 2) &#123;
-    dengBox.style.top = &#39;-25px&#39;;
-    dengBox.style.left = &#39;184px&#39;;
-&#125; else if (position === 3) &#123;
-    dengBox.style.top = &#39;-28px&#39;;
-    dengBox.style.right = &#39;11px&#39;;
-&#125; else if (position === 4) &#123;
-    dengBox.style.top = &#39;-26px&#39;;
-    dengBox.style.right = &#39;183px&#39;;
-&#125;
+        <script>
+// 你的 createDengBox 函数和调用代码
+function createDengBox(position, text) {
+    const dengBox = document.createElement('div');
+    dengBox.className = `deng-box${position}`;
+    dengBox.style.position = 'fixed';
+    dengBox.style.zIndex = '9999';
+    dengBox.style.pointerEvents = 'none';
 
-// 创建灯笼内部结构
-dengBox.innerHTML = `
-    &lt;div class=&quot;deng&quot;&gt;
-        &lt;div class=&quot;xian&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;deng-a&quot;&gt;
-            &lt;div class=&quot;deng-b&quot;&gt;&lt;div class=&quot;deng-t&quot;&gt;$&#123;text&#125;&lt;/div&gt;&lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;shui shui-a&quot;&gt;&lt;div class=&quot;shui-c&quot;&gt;&lt;/div&gt;&lt;div class=&quot;shui-b&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-    &lt;/div&gt;
-`;
+    // 设置位置
+    if (position === 1) {
+        dengBox.style.top = '-30px';
+        dengBox.style.left = '-1px';
+    } else if (position === 2) {
+        dengBox.style.top = '-25px';
+        dengBox.style.left = '184px';
+    } else if (position === 3) {
+        dengBox.style.top = '-28px';
+        dengBox.style.right = '11px';
+    } else if (position === 4) {
+        dengBox.style.top = '-26px';
+        dengBox.style.right = '183px';
+    }
 
-// 添加CSS样式
-const style = document.createElement(&#39;style&#39;);
-style.innerHTML = `
-    .deng-box$&#123;position&#125; .deng &#123;
-        position: relative;
-        width: 120px;
-        height: 90px;
-        margin: 50px;
-        background: rgba(216, 0, 15, 0.8);
-        border-radius: 50% 50%;
-        -webkit-transform-origin: 50% -100px;
-        -webkit-animation: swing $&#123;position === 1 ? &#39;3s&#39; : position === 2 || position === 4 ? &#39;4s&#39; : &#39;5s&#39;&#125; infinite ease-in-out;
-        box-shadow: -5px 5px $&#123;position === 1 || position === 3 ? &#39;50px&#39; : &#39;30px&#39;&#125; 4px rgba($&#123;position === 1 || position === 3 ? &#39;250, 108, 0&#39; : &#39;252, 144, 61&#39;&#125;, 1);
-    &#125;
-    .deng-a &#123;
-        width: 100px;
-        height: 90px;
-        background: rgba(216, 0, 15, 0.1);
-        margin: 12px 8px 8px 10px;
-        border-radius: 50% 50%;
-        border: 2px solid #dc8f03;
-    &#125;
+    // 创建灯笼内部结构
+    dengBox.innerHTML = `
+        <div class="deng">
+            <div class="xian"></div>
+            <div class="deng-a">
+                <div class="deng-b"><div class="deng-t">${text}</div></div>
+            </div>
+            <div class="shui shui-a"><div class="shui-c"></div><div class="shui-b"></div></div>
+        </div>
+    `;
 
-    .deng-b &#123;
-        width: 45px;
-        height: 90px;
-        background: rgba(216, 0, 15, 0.1);
-        margin: -2px 8px 8px 26px;
-        border-radius: 50% 50%;
-        border: 2px solid #dc8f03;
-    &#125;
+    // 添加CSS样式
+    const style = document.createElement('style');
+    style.innerHTML = `
+        .deng-box${position} .deng {
+            position: relative;
+            width: 120px;
+            height: 90px;
+            margin: 50px;
+            background: rgba(216, 0, 15, 0.8);
+            border-radius: 50% 50%;
+            -webkit-transform-origin: 50% -100px;
+            -webkit-animation: swing ${position === 1 ? '3s' : position === 2 || position === 4 ? '4s' : '5s'} infinite ease-in-out;
+            box-shadow: -5px 5px ${position === 1 || position === 3 ? '50px' : '30px'} 4px rgba(${position === 1 || position === 3 ? '250, 108, 0' : '252, 144, 61'}, 1);
+        }
+        .deng-a {
+            width: 100px;
+            height: 90px;
+            background: rgba(216, 0, 15, 0.1);
+            margin: 12px 8px 8px 10px;
+            border-radius: 50% 50%;
+            border: 2px solid #dc8f03;
+        }
 
-    .xian &#123;
-        position: absolute;
-        top: -50px;
-        left: 60px;
-        width: 2px;
-        height: 50px;
-        background: #dc8f03;
-    &#125;
+        .deng-b {
+            width: 45px;
+            height: 90px;
+            background: rgba(216, 0, 15, 0.1);
+            margin: -2px 8px 8px 26px;
+            border-radius: 50% 50%;
+            border: 2px solid #dc8f03;
+        }
 
-    .shui-a &#123;
-        position: relative;
-        width: 5px;
-        height: 20px;
-        margin: -5px 0 0 59px;
-        -webkit-animation: swing 4s infinite ease-in-out;
-        -webkit-transform-origin: 50% -45px;
-        background: #ffa500;
-        border-radius: 0 0 5px 5px;
-    &#125;
+        .xian {
+            position: absolute;
+            top: -50px;
+            left: 60px;
+            width: 2px;
+            height: 50px;
+            background: #dc8f03;
+        }
 
-    .shui-b &#123;
-        position: absolute;
-        top: 14px;
-        left: -2px;
-        width: 10px;
-        height: 10px;
-        background: #dc8f03;
-        border-radius: 50%;
-    &#125;
+        .shui-a {
+            position: relative;
+            width: 5px;
+            height: 20px;
+            margin: -5px 0 0 59px;
+            -webkit-animation: swing 4s infinite ease-in-out;
+            -webkit-transform-origin: 50% -45px;
+            background: #ffa500;
+            border-radius: 0 0 5px 5px;
+        }
 
-    .shui-c &#123;
-        position: absolute;
-        top: 18px;
-        left: -2px;
-        width: 10px;
-        height: 35px;
-        background: #ffa500;
-        border-radius: 0 0 0 5px;
-    &#125;
+        .shui-b {
+            position: absolute;
+            top: 14px;
+            left: -2px;
+            width: 10px;
+            height: 10px;
+            background: #dc8f03;
+            border-radius: 50%;
+        }
 
-    .deng:before &#123;
-        position: absolute;
-        top: -7px;
-        left: 29px;
-        height: 12px;
-        width: 60px;
-        content: &quot; &quot;;
-        display: block;
-        z-index: 999;
-        border-radius: 5px 5px 0 0;
-        border: solid 1px #dc8f03;
-        background: #ffa500;
-        background: linear-gradient(to right, #dc8f03, #ffa500, #dc8f03, #ffa500, #dc8f03);
-    &#125;
+        .shui-c {
+            position: absolute;
+            top: 18px;
+            left: -2px;
+            width: 10px;
+            height: 35px;
+            background: #ffa500;
+            border-radius: 0 0 0 5px;
+        }
 
-    .deng:after &#123;
-        position: absolute;
-        bottom: -7px;
-        left: 10px;
-        height: 12px;
-        width: 60px;
-        content: &quot; &quot;;
-        display: block;
-        margin-left: 20px;
-        border-radius: 0 0 5px 5px;
-        border: solid 1px #dc8f03;
-        background: #ffa500;
-        background: linear-gradient(to right, #dc8f03, #ffa500, #dc8f03, #ffa500, #dc8f03);
-    &#125;
+        .deng:before {
+            position: absolute;
+            top: -7px;
+            left: 29px;
+            height: 12px;
+            width: 60px;
+            content: " ";
+            display: block;
+            z-index: 999;
+            border-radius: 5px 5px 0 0;
+            border: solid 1px #dc8f03;
+            background: #ffa500;
+            background: linear-gradient(to right, #dc8f03, #ffa500, #dc8f03, #ffa500, #dc8f03);
+        }
 
-    .deng-t &#123;
-        font-family: 华文行楷,Arial,Lucida Grande,Tahoma,sans-serif;
-        font-size: 3.2rem;
-        color: #dc8f03;
-        font-weight: bold;
-        line-height: 85px;
-        text-align: center;
-    &#125;
+        .deng:after {
+            position: absolute;
+            bottom: -7px;
+            left: 10px;
+            height: 12px;
+            width: 60px;
+            content: " ";
+            display: block;
+            margin-left: 20px;
+            border-radius: 0 0 5px 5px;
+            border: solid 1px #dc8f03;
+            background: #ffa500;
+            background: linear-gradient(to right, #dc8f03, #ffa500, #dc8f03, #ffa500, #dc8f03);
+        }
 
-    @-webkit-keyframes swing &#123;
-        0% &#123; -webkit-transform: rotate(-10deg) &#125;
-        50% &#123; -webkit-transform: rotate(10deg) &#125;
-        100% &#123; -webkit-transform: rotate(-10deg) &#125;
-    &#125;
-`;
+        .deng-t {
+            font-family: 华文行楷,Arial,Lucida Grande,Tahoma,sans-serif;
+            font-size: 3.2rem;
+            color: #dc8f03;
+            font-weight: bold;
+            line-height: 85px;
+            text-align: center;
+        }
 
-document.head.appendChild(style);
-document.body.appendChild(dengBox);
-</code></pre>
-<p>}</p>
-<p>&#x2F;&#x2F; 使用函数创建灯笼<br>createDengBox(1, ‘春’);<br>createDengBox(2, ‘节’);<br>createDengBox(3, ‘乐’);<br>createDengBox(4, ‘快’);</p>
+        @-webkit-keyframes swing {
+            0% { -webkit-transform: rotate(-10deg) }
+            50% { -webkit-transform: rotate(10deg) }
+            100% { -webkit-transform: rotate(-10deg) }
+        }
+    `;
+
+    document.head.appendChild(style);
+    document.body.appendChild(dengBox);
+}
+
+// 使用函数创建灯笼
+createDengBox(1, '春');
+createDengBox(2, '节');
+createDengBox(3, '乐');
+createDengBox(4, '快');
+</script>
+<h6>你可以看到一群灯笼吗</h6>
+
 
       
     </div>
@@ -370,7 +385,7 @@ document.body.appendChild(dengBox);
       
         
         
-          <img data-src="https://img.sobot.com/56b093dec73c42dca06a96734ffa6258/chatres/56b093dec73c42dca06a96734ffa6258/msg/20241226/a1563905111d66f5033927df2f544f83/6bf5173a23434479b0ef76c9d2b110a7.webp" data-sizes="auto" alt="绪论" class="lazyload">
+          <img data-src="https://img.sobot.com/56b093dec73c42dca06a96734ffa6258/chatres/56b093dec73c42dca06a96734ffa6258/msg/20241226/a1563905111d66f5033927df2f544f83/b9a6de2cb5c641d6a5ff67d1a328f17d.webp" data-sizes="auto" alt="绪论" class="lazyload">
         
       
       <a href="/2024/12/27/%E7%BB%AA%E8%AE%BA/"></a>
@@ -402,7 +417,7 @@ document.body.appendChild(dengBox);
   <h3 class="toc-title">文章目录</h3>
   <div class="sidebar-toc-wrapper toc-div-class" >
       
-        
+        <ol class="toc"><li class="toc-item toc-level-6"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text">你可以看到一群灯笼吗</span></a></li></ol>
       
   </div>
 </div>
@@ -495,10 +510,10 @@ document.body.appendChild(dengBox);
     
       <div>
         <span class="icon-brush"></span>
-        46.2k
+        46k
         &nbsp;|&nbsp;
         <span class="icon-coffee"></span>
-        02:43
+        02:42
       </div>
     
     
@@ -530,7 +545,7 @@ document.body.appendChild(dengBox);
   <h3 class="toc-title">文章目录</h3>
   <div class="sidebar-toc-wrapper toc-div-class" >
       
-        
+        <ol class="toc"><li class="toc-item toc-level-6"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text">你可以看到一群灯笼吗</span></a></li></ol>
       
   </div>
 </div>
